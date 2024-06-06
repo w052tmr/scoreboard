@@ -1,0 +1,20 @@
+.header {
+    span {
+        display: inline-block;
+        width: 4.5%;
+
+        @media (max-width: 43.75em) {
+            width: 2.25%;
+            padding: 3rem 0rem 3rem;
+        }
+
+        @media (max-width: 31.25em) {
+            width: 2%;
+            padding: 3rem 0rem 5rem;
+        }
+
+        @media (max-width: 26em) {
+            width: 0;
+        }
+    }
+}

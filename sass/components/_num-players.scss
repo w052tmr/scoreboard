@@ -1,0 +1,53 @@
+.num-players {
+    // display: flex;
+    // justify-content: center;
+    max-width: 70rem;
+    min-width: 35rem;
+    margin: 5rem auto;
+    padding: 2.5rem;
+    background-color: $grey-light;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 4rem rgba ($black, 1);
+    position: relative;
+
+    @media (max-width: 43.75em) {
+        width: 80%;
+        padding: 1.5rem;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 37.5em) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__label,
+    &__number {
+        display: block;
+        font-weight: 500;
+        letter-spacing: 0.5rem;
+        color: $grey-light;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 1rem;
+    }
+
+    &__label {
+        font-size: 2.8rem;
+    }
+
+    &__number {
+        font-size: 4rem;
+    }
+
+    &__add-player,
+    &__minus-player {
+        padding: 1.5rem 0.25rem;
+        font-size: 3rem;
+        color: $black;
+    }
+}

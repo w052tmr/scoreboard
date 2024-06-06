@@ -1,0 +1,18 @@
+{
+    "name": "scoreboard",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+        "build:js": "esbuild ./js/index.js --bundle --outfile=./js/bundle.js",
+        "watch:js": "esbuild ./js/index.js --bundle --outfile=./js/bundle.js --watch",
+        "watch:sass": "node-sass ./sass/main.scss ./sass/main.css -w",
+        "compile:sass": "node-sass ./sass/main.scss ./css/main.comp.css"
+    },
+    "author": "Troy M. Ricker",
+    "license": "ISC",
+    "dependencies": {
+        "esbuild": "^0.21.4",
+        "node-sass": "^9.0.0"
+    }
+}

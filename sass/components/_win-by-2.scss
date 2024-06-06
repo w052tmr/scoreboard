@@ -1,0 +1,65 @@
+.win-by-2 {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1.8rem;
+    color: rgba($grey-light, 0.95);
+    letter-spacing: 0.4rem;
+    font-weight: 600;
+    min-width: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0.75rem;
+    padding: 1rem 2rem;
+    text-align: left;
+
+    @media (max-width: 31.25em) {
+        bottom: 18rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        min-width: 4rem;
+        display: inline-block;
+        margin: 0 1.5rem;
+    }
+
+    &__check {
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: rgba($grey-light, 1);
+        border-radius: 2px;
+        position: absolute;
+        top: 50%;
+        left: 16rem;
+        transform: translateY(-50%);
+
+        &::after {
+            display: inline-block;
+            content: '';
+            width: 2rem;
+            height: 2rem;
+            background-color: rgba($black, 0.85);
+            border-radius: 2px;
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s;
+        }
+    }
+
+    &__input:checked + .win-by-2__label .win-by-2__check::after {
+        opacity: 1;
+        visibility: visible;
+    }
+}

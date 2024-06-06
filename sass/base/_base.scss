@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 43.75%;
+    box-sizing: border-box;
+
+    // @media (min-width: 118.75em){
+    //     font-size: 100%;
+    // }
+
+    // @media (max-width: 68.75em){
+    //     font-size: 50%;
+    // }
+
+    // @media (max-width: 56.25em){
+    //     font-size: 42.25%;
+    // }
+}
+
+body {
+    box-sizing: inherit;
+    padding: 3rem;
+}
+
+::selection {
+    background-color: $black;
+    color: $grey-light;
+}

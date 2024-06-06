@@ -1,0 +1,15 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40rem;
+    text-align: center;
+
+    @media (max-width: 37.5em) {
+        flex-direction: column;
+    }
+}
+
+.align-center {
+    align-self: center;
+}
