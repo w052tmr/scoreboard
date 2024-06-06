@@ -12,6 +12,12 @@ html {
 body {
   box-sizing: inherit;
   padding: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      padding: 1rem; } }
+  @media only screen and (max-width: 25em) {
+    body {
+      padding: 0rem; } }
 
 ::selection {
   background-color: #1a1423;
